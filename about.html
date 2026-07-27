@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About MandiFresh</title>
+<meta name="description" content="Learn how MandiFresh helps farmers track mandi prices and estimate profit, and the technology behind it.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">M</span>
+      <span>MandiFresh<small>Agri Price Tracker</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="prices.html">Mandi Prices</a></li>
+        <li><a href="calculator.html">Profit Calculator</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="calculator.html" class="btn btn-primary btn-sm">Get Started</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Live mandi price ticker">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<section class="page-header">
+  <div class="container-xl">
+    <span class="eyebrow">The Project</span>
+    <h1>About MandiFresh</h1>
+    <p>A frontend prototype for a real problem: farmers often sell without knowing whether today's price is fair, or what it means for their margin.</p>
+  </div>
+</section>
+
+<!-- Mission -->
+<section style="padding-top:0;">
+  <div class="container-xl">
+    <div class="mission-grid reveal">
+      <div>
+        <span class="eyebrow">Mission</span>
+        <h2 style="margin-top:14px;">Give every farmer the same information a trader has</h2>
+        <p style="margin-top:16px; font-size:1.02rem;">MandiFresh exists to close the information gap between mandi traders and the farmers who supply them. By surfacing daily rates, 30-day trends and a simple profit calculator in one place, a farmer can walk into negotiation — or plan a season — with real numbers instead of guesswork.</p>
+        <p style="margin-top:14px;">The platform tracks prices across 10 mandis and 50+ crops, and lets anyone estimate revenue, cost and break-even price before a single kg is sold.</p>
+      </div>
+      <img src="https://images.pexels.com/photos/32912931/pexels-photo-32912931.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Vegetable seller with fresh produce at a traditional Indian market">
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section>
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="eyebrow">Process</span>
+      <h2>How It Works</h2>
+      <p>Four steps from opening the dashboard to knowing your number.</p>
+    </div>
+    <div class="step-grid">
+      <div class="step-card reveal">
+        <span class="step-num">STEP 01</span>
+        <h4>Select Crop</h4>
+        <p>Choose a crop from over 50 tracked commodities, from onion and tomato to turmeric and cotton.</p>
+        <svg class="step-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">STEP 02</span>
+        <h4>View Mandi Prices</h4>
+        <p>Compare current and previous rates across partner mandis to see where the price is strongest.</p>
+        <svg class="step-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">STEP 03</span>
+        <h4>Analyze Trend</h4>
+        <p>Read the 30-day chart to check if a price is climbing, falling, or holding steady before you sell.</p>
+        <svg class="step-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </div>
+      <div class="step-card reveal">
+        <span class="step-num">STEP 04</span>
+        <h4>Calculate Profit</h4>
+        <p>Enter quantity, cost and selling price to get revenue, net profit or loss, and your break-even rate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech stack -->
+<section>
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="eyebrow">Under the Hood</span>
+      <h2>Technology Stack</h2>
+      <p>A lightweight, dependency-light frontend, built to plug into a CodeIgniter 4 backend.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card reveal">
+        <div class="tech-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 4 1.5 16.5L12 22l6.5-1.5L20 4H4Z"/><path d="M7 8h10l-.4 8L12 17.5 8.4 16 8.2 13"/></svg></div>
+        <b>HTML5</b><span>Semantic structure</span>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v14"/></svg></div>
+        <b>Bootstrap 5</b><span>Responsive grid &amp; forms</span>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3 4 7l4 4M16 3l4 4-4 4M14 3l-4 18"/></svg></div>
+        <b>JavaScript</b><span>Filters, calculator logic</span>
+      </div>
+      <div class="tech-card reveal">
+        <div class="tech-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8 12 14.7l-3.3-3.4L3 17"/></svg></div>
+        <b>Canvas Charts</b><span>30-day price trend</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section>
+  <div class="container-xl">
+    <div class="section-head reveal">
+      <span class="eyebrow">Outcomes</span>
+      <h2>Benefits</h2>
+    </div>
+    <div class="benefit-chip-grid">
+      <div class="benefit-chip reveal">
+        <div class="icn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18.7 8 12 14.7l-3.3-3.4L3 17"/></svg></div>
+        <div><h4>Data Driven Decisions</h4><p>Sell based on rate boards and trend charts, not word-of-mouth pricing.</p></div>
+      </div>
+      <div class="benefit-chip reveal">
+        <div class="icn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <div><h4>Better Income Planning</h4><p>Model cost and margin before the season starts, not after the harvest is sold.</p></div>
+      </div>
+      <div class="benefit-chip reveal">
+        <div class="icn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><h4>Easy Price Monitoring</h4><p>Check current rates for any crop across 10 mandis in a few taps.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-xl">
+    <div class="cta-band reveal">
+      <span class="eyebrow" style="color:var(--amber);">Ready When You Are</span>
+      <h2>See today's mandi prices</h2>
+      <p>Open the dashboard and check the latest rates across 10 partner mandis.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="prices.html" class="btn btn-amber">View Mandi Prices</a>
+        <a href="calculator.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4); color:#fff;">Try the Calculator</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container-xl">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand"><span class="brand-mark">M</span> MandiFresh</div>
+        <p>A simple price-tracking and profit-planning tool for India's farmers and mandi traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prices.html">Mandi Prices</a></li>
+          <li><a href="calculator.html">Profit Calculator</a></li>
+          <li><a href="about.html">About Project</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Mandi Directory</a></li>
+          <li><a href="#">Crop Guide</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Krishi Bhavan Road<br>Nashik, Maharashtra 422001</p>
+        <p style="margin-top:8px;">support@mandifresh.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footerYear"></span> MandiFresh. Built for India's farmers.</span>
+      <span>Frontend prototype · Ready for CodeIgniter 4 integration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

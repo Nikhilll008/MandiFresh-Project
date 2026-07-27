@@ -1,0 +1,126 @@
+CRITICAL - 2026-07-03 11:57:25 --> Error: Class "App\Filters\CorsFilter" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\CorsFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 11:57:40 --> Error: Class "App\Filters\CorsFilter" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\CorsFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 12:03:38 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 12:03:40 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 12:15:12 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 12:15:13 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 12:16:54 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:07:14 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:07:15 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboardv]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:07:18 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:07:19 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:11:34 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:13:12 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/dashboard]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:14:23 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')
+CRITICAL - 2026-07-03 13:14:24 --> Error: Object of class CodeIgniter\HTTP\Response could not be converted to string
+[Method: GET, Route: api/crops]
+in SYSTEMPATH\CodeIgniter.php on line 998.
+ 1 SYSTEMPATH\CodeIgniter.php(369): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 2 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HP\\Desktop\\Mandifresh\\backend\\mandifresh-ci4\\public\\index.php')

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Profit Calculator — MandiFresh</title>
+<meta name="description" content="Calculate your expected revenue, cost and net profit or loss per crop with the MandiFresh profit calculator.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">M</span>
+      <span>MandiFresh<small>Agri Price Tracker</small></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="prices.html">Mandi Prices</a></li>
+        <li><a href="calculator.html" class="active">Profit Calculator</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="prices.html" class="btn btn-outline btn-sm">View Prices</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Live mandi price ticker">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<section class="page-header">
+  <div class="container-xl">
+    <span class="eyebrow">Profit Calculator</span>
+    <h1>Calculate Your Expected Profit</h1>
+    <p>Enter your quantity, production cost and expected selling price to see revenue, net profit or loss, and where your break-even point sits.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container-xl">
+    <div class="calc-layout">
+
+      <!-- Calculator form -->
+      <div class="calc-card reveal">
+        <h3 style="margin-bottom:24px;">Crop &amp; Cost Details</h3>
+        <form id="calcForm">
+          <div class="form-row">
+            <label for="calcCrop">Crop Name</label>
+            <input type="text" id="calcCrop" class="form-control" placeholder="e.g. Onion" value="Onion">
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 form-row">
+              <label for="calcQuantity">Quantity (kg)</label>
+              <div class="input-affix">
+                <input type="number" min="0" step="1" id="calcQuantity" class="form-control" placeholder="1000" value="1000">
+              </div>
+            </div>
+            <div class="col-md-6 form-row">
+              <label for="calcCost">Production Cost</label>
+              <div class="input-affix has-suffix">
+                <span class="prefix">₹</span>
+                <input type="number" min="0" step="0.1" id="calcCost" class="form-control" placeholder="12" value="12">
+                <span class="suffix">/ kg</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="calcPrice">Selling Price Per Kg</label>
+            <div class="input-affix has-suffix">
+              <span class="prefix">₹</span>
+              <input type="number" min="0" step="0.1" id="calcPrice" class="form-control" placeholder="18" value="18">
+              <span class="suffix">/ kg</span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:6px;">Calculate Profit</button>
+        </form>
+
+        <div class="result-cards" id="calcResults">
+          <div class="result-card"><span>Revenue</span><b>—</b></div>
+          <div class="result-card"><span>Total Cost</span><b>—</b></div>
+          <div class="result-card"><span>Net Profit</span><b>—</b></div>
+        </div>
+
+        <div class="insights-panel">
+          <span class="eyebrow" style="margin-bottom:14px; display:inline-flex;">Insights</span>
+          <div id="calcInsights">
+            <div class="insight-row"><span>Crop</span><b>—</b></div>
+            <div class="insight-row"><span>Profit Margin</span><b>—</b></div>
+            <div class="insight-row"><span>Break-even Price</span><b>—</b></div>
+            <div class="insight-row"><span>Suggested Selling Rate</span><b>—</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side illustration -->
+      <div class="calc-side">
+        <div class="calc-illustration reveal">
+          <svg viewBox="0 0 400 340" width="100%" height="auto" role="img" aria-label="Illustration of crop growth and profit">
+            <defs>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#EAF3E3"/>
+                <stop offset="100%" stop-color="#F8FAF5"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="400" height="340" rx="16" fill="url(#skyGrad)"/>
+      
+            <path d="M0 270 Q100 250 200 270 T400 270 V340 H0 Z" fill="#DCE9CE"/>
+          
+            <rect x="60" y="210" width="26" height="60" rx="4" fill="#B7CDA4"/>
+            <rect x="100" y="180" width="26" height="90" rx="4" fill="#8FB374"/>
+            <rect x="140" y="140" width="26" height="130" rx="4" fill="#4E9550"/>
+            <rect x="180" y="100" width="26" height="170" rx="4" fill="#2E7D32"/>
+          
+            <circle cx="290" cy="150" r="34" fill="#F9A825"/>
+            <text x="290" y="160" font-family="IBM Plex Mono, monospace" font-size="30" font-weight="700" fill="#123c14" text-anchor="middle">₹</text>
+            <circle cx="330" cy="110" r="16" fill="#F9A825" opacity="0.55"/>
+           
+            <g transform="translate(210,230)">
+              <path d="M0 60 C0 20 20 0 20 0 C20 0 40 20 40 60 Z" fill="#2E7D32"/>
+              <path d="M20 60 V0" stroke="#1B5E20" stroke-width="2"/>
+              <path d="M45 60 C45 30 60 15 60 15 C60 15 75 30 75 60 Z" fill="#4E9550"/>
+            </g>
+            
+            <path d="M240 90 L262 65 L284 82 L320 45" stroke="#1B5E20" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M304 45 H320 V61" stroke="#1B5E20" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="calc-tip-card reveal">
+          <h4>How this works</h4>
+          <p>Revenue is Quantity × Selling Price. Total Cost is Quantity × Production Cost per kg. Net Profit or Loss is the difference between the two — updated instantly as you type.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container-xl">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand"><span class="brand-mark">M</span> MandiFresh</div>
+        <p>A simple price-tracking and profit-planning tool for India's farmers and mandi traders.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="prices.html">Mandi Prices</a></li>
+          <li><a href="calculator.html">Profit Calculator</a></li>
+          <li><a href="about.html">About Project</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Mandi Directory</a></li>
+          <li><a href="#">Crop Guide</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Krishi Bhavan Road<br>Nashik, Maharashtra 422001</p>
+        <p style="margin-top:8px;">support@mandifresh.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footerYear"></span> MandiFresh. Built for India's farmers.</span>
+      <span>Frontend prototype · Ready for CodeIgniter 4 integration</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>
